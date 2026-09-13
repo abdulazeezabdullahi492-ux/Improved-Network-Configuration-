@@ -70,7 +70,7 @@ does not connect Segment D to any other segment.
 
 ## 4. Addressing Plan
 
-Each of the four segments was assigned its own /24 subnet, keeping
+Each of the four segments was assigned its own subnet, keeping
 addressing simple and segment membership self-evident from the IP address
 alone.
 
