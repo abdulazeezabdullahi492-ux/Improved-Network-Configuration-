@@ -152,13 +152,29 @@ objectives.
 | Test Case | Purpose | Expected Outcome | Observed Result |
 |---|---|---|---|
 | PC0 → PC1 | Confirm intra-segment connectivity (Segment A) | Success | Reply received |
+
 <img width="303" height="353" alt="Screenshot 2026-09-13 115445" src="https://github.com/user-attachments/assets/c26be33f-ad6a-4b6c-8cd5-9454a359fbce" />
 
+|---|---|---|---|
 | PC0 → PC4 | Confirm isolation between Segment A and Segment B | Failure | Request timed out |
 
+<img width="517" height="304" alt="Screenshot 2026-09-13 120551" src="https://github.com/user-attachments/assets/05c5da70-666e-4a99-89f2-cae28f7aca9a" />
+
+|---|---|---|---|
 | PC4 → PC8 | Confirm isolation between Segment B and Segment C | Failure | Request timed out |
+
+<img width="518" height="370" alt="Screenshot 2026-09-13 120800" src="https://github.com/user-attachments/assets/629f0eab-fa29-465d-9405-506d1e8e9e6d" />
+
+|---|---|---|---|
 | PC0 → PC12 | Confirm isolation between Segment A and Segment D | Failure | Request timed out |
+
+<img width="520" height="261" alt="Screenshot 2026-09-13 121923" src="https://github.com/user-attachments/assets/4cb3a1f1-f6e6-4e78-a8fb-55ccb6e50b58" />
+
+
+|---|---|---|---|
 | PC15 (wireless) → Server2 | Confirm wireless-to-wired connectivity within Segment D | Success | Reply received |
+
+|---|---|---|---|
 | PC15 (wireless) → PC4 | Confirm wireless clients in Segment D cannot reach Segment B | Failure | Request timed out |
 
 Full raw command output for all test cases is recorded in
