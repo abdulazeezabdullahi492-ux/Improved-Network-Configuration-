@@ -39,8 +39,8 @@ The network was designed to meet the following objectives:
 
 ### 3.1 Topology Diagram
 
-![Topology Diagram](![Uploading Screenshot (39).png…]()
-)
+<img width="1920" height="1080" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/44e685b8-3c6d-4308-994d-78615e6f9a19" />
+
 
 ### 3.2 Device Inventory
 
