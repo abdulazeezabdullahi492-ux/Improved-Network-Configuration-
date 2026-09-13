@@ -199,22 +199,8 @@ segment does not create any path into the others.
 
 ---
 
-## 9. Conclusion and Recommendations
+## 9. Conclusion
 
 The implemented network successfully met all stated objectives — complete
 isolation across all four segments, with wireless access correctly scoped
-to Segment D alone. For future iterations, the following extensions would
-be worth considering:
-
-- Introducing a router or Layer 3 switch with explicit access control lists, should controlled communication between specific segments become a requirement.
-- Migrating to VLAN-based segmentation on shared switches if the number of isolated segments grows beyond what dedicated physical switches can practically support.
-- Adding port security on access switches to further harden each segment against unauthorized device connections.
-
----
-
-## 10. Appendices
-
-- [`project.pkt`](project.pkt) — Packet Tracer project file
-- [`configs/`](configs/) — exported running-configuration for every device
-- [`verification.md`](verification.md) — complete test and verification log
-- [`verification.md`](verification.md) — complete test and verification log
+to Segment D alone. 
