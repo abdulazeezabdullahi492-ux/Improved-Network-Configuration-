@@ -125,25 +125,21 @@ another — each functions as a completely self-contained LAN.
 
 ## 6. Implementation Details
 
-Representative configuration excerpts are shown below. Full per-device
-configurations are provided in [`configs/`](configs/).
-
 ```
 ! Switch0 - management interface
 interface vlan 1
- ip address 192.168.10.2 255.255.255.0
- no shutdown
+ ip address 192.168.10.0 255.255.255.0
 ```
 
 ```
 ! Access Point0 - wireless configuration (Segment D only)
 SSID: SegmentD-WiFi
-Authentication: WPA2-PSK
-IP Address: 192.168.40.2 / 255.255.255.0
+Authentication: Disable
+IP Address: 192.168.13.0 / 255.255.255.0
 ```
 
 Wireless clients (PC15, Smartphone0) were configured with matching WPA2-PSK
-credentials and assigned static IP addresses within the 192.168.40.0/24
+credentials and assigned static IP addresses within the 192.168.13.0/24
 range, keeping them within Segment D's addressing scheme.
 
 ---
@@ -156,7 +152,10 @@ objectives.
 | Test Case | Purpose | Expected Outcome | Observed Result |
 |---|---|---|---|
 | PC0 → PC1 | Confirm intra-segment connectivity (Segment A) | Success | Reply received |
+<img width="303" height="353" alt="Screenshot 2026-09-13 115445" src="https://github.com/user-attachments/assets/c26be33f-ad6a-4b6c-8cd5-9454a359fbce" />
+
 | PC0 → PC4 | Confirm isolation between Segment A and Segment B | Failure | Request timed out |
+
 | PC4 → PC8 | Confirm isolation between Segment B and Segment C | Failure | Request timed out |
 | PC0 → PC12 | Confirm isolation between Segment A and Segment D | Failure | Request timed out |
 | PC15 (wireless) → Server2 | Confirm wireless-to-wired connectivity within Segment D | Success | Reply received |
