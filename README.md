@@ -179,14 +179,11 @@ objectives.
 
 <img width="519" height="271" alt="Screenshot 2026-09-13 123802" src="https://github.com/user-attachments/assets/87b1229e-d6f4-45ca-ada5-2807339ca104" />
 
-
-
 | Test Case | Purpose | Expected Outcome | Observed Result |
 |---|---|---|---|
 | PC15 (wireless) → PC4 | Confirm wireless clients in Segment D cannot reach Segment B | Failure | Request timed out |
 
-Full raw command output for all test cases is recorded in
-[`verification.md`](verification.md).
+<img width="514" height="231" alt="Screenshot 2026-09-13 124328" src="https://github.com/user-attachments/assets/e01f172b-7c99-48ee-8bc0-86d6f298aba3" />
 
 ---
 
