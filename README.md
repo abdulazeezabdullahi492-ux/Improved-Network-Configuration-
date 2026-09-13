@@ -177,6 +177,10 @@ objectives.
 |---|---|---|---|
 | PC15 (wireless) → Server2 | Confirm wireless-to-wired connectivity within Segment D | Success | Reply received |
 
+<img width="519" height="271" alt="Screenshot 2026-09-13 123802" src="https://github.com/user-attachments/assets/87b1229e-d6f4-45ca-ada5-2807339ca104" />
+
+
+
 | Test Case | Purpose | Expected Outcome | Observed Result |
 |---|---|---|---|
 | PC15 (wireless) → PC4 | Confirm wireless clients in Segment D cannot reach Segment B | Failure | Request timed out |
